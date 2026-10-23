@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flowers & Butterflies</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#accueil">
+                🌸 Flowers<span>&Butterflies</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalogue">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prix">Prices</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-flower" href="#reservation">
+                            Reserve Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content text-center">
+            <p class="hero-subtitle">NATURE • BEAUTY • ELEGANCE</p>
+
+            <h1>Flowers & Butterflies</h1>
+
+            <p class="hero-description">
+                Discover the beauty of flowers and find the perfect scent
+                that reflects your personality.
+            </p>
+
+            <a href="#catalogue" class="btn btn-flower btn-lg mt-3">
+                Discover Our Flowers
+            </a>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro-section py-5">
+        <div class="container text-center">
+            <p class="section-subtitle">WELCOME TO OUR WORLD</p>
+
+            <h2 class="section-title">Nature's Beauty, Just for You</h2>
+
+            <p class="intro-text mx-auto">
+                At Flowers & Butterflies, we offer a beautiful collection
+                of flowers with unique fragrances. Choose your favorite
+                flower and enjoy a scent inspired by nature.
+            </p>
+        </div>
+    </section>
+
+    <!-- Flower Carousel -->
+    <section class="gallery-section pb-5">
+        <div class="container">
+
+            <div id="flowerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#flowerCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+
+                    <button type="button" data-bs-target="#flowerCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+
+                    <button type="button" data-bs-target="#flowerCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner rounded-4 shadow">
+
+                    <div class="carousel-item active">
+                        <img src="images/images.jif" class="d-block w-100 carousel-img" alt="Beautiful vervain flowers">
+
+                        <div class="carousel-caption">
+                            <h3>Discover Natural Beauty</h3>
+                            <p>Every flower tells a story.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/images1.jif" class="d-block w-100 carousel-img"
+                            alt="Beautiful lily of the valley flowers">
+
+                        <div class="carousel-caption">
+                            <h3>Elegance in Every Petal</h3>
+                            <p>Find the scent that makes you unique.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/images5.jif" class="d-block w-100 carousel-img" alt="Elegant lilies">
+
+                        <div class="carousel-caption">
+                            <h3>Let Nature Inspire You</h3>
+                            <p>Choose your favorite flower today.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#flowerCarousel"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#flowerCarousel"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Flower Catalogue -->
+    <section id="catalogue" class="catalogue-section py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <p class="section-subtitle">OUR COLLECTION</p>
+                <h2 class="section-title">Discover Our Flowers</h2>
+                <p class="text-muted">
+                    Find your favorite flower and its unique fragrance.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Flower 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card flower-card h-100">
+                        <img src="images/images.jif" class="card-img-top flower-card-img" alt="Vervain flower">
+
+                        <div class="card-body d-flex flex-column">
+                            <span class="flower-category">FLOWER 01</span>
+
+                            <h3 class="card-title">Vervain</h3>
+
+                            <p class="card-text text-muted">
+                                A natural, woody scent inspired by the
+                                freshness and beauty of nature.
+                            </p>
+
+                            <div class="mt-auto d-flex justify-content-between
+                                        align-items-center">
+                                <span class="flower-price">100 DT</span>
+
+                                <a href="#reservation" class="btn btn-outline-flower" data-flower="vervaine">
+                                    Choose Flower
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flower 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card flower-card h-100">
+                        <img src="images/images1.jif" class="card-img-top flower-card-img" alt="Lily of the valley">
+
+                        <div class="card-body d-flex flex-column">
+                            <span class="flower-category">FLOWER 02</span>
+
+                            <h3 class="card-title">Lily of the Valley</h3>
+
+                            <p class="card-text text-muted">
+                                A delicate floral scent that brings
+                                freshness and attracts attention.
+                            </p>
+
+                            <div class="mt-auto d-flex justify-content-between
+                                        align-items-center">
+                                <span class="flower-price">150 DT</span>
+
+                                <a href="#reservation" class="btn btn-outline-flower" data-flower="valley">
+                                    Choose Flower
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flower 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card flower-card h-100">
+                        <img src="images/images5.jif" class="card-img-top flower-card-img" alt="Beautiful lilies">
+
+                        <div class="card-body d-flex flex-column">
+                            <span class="flower-category">FLOWER 03</span>
+
+                            <h3 class="card-title">Lilies</h3>
+
+                            <p class="card-text text-muted">
+                                A soft, elegant vanilla fragrance for
+                                a luxurious floral experience.
+                            </p>
+
+                            <div class="mt-auto d-flex justify-content-between
+                                        align-items-center">
+                                <span class="flower-price">200 DT</span>
+
+                                <a href="#reservation" class="btn btn-outline-flower" data-flower="lilies">
+                                    Choose Flower
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Table -->
+    <section id="prix" class="price-section py-5">
+        <div class="container">
+
+            <div class="text-center mb-4">
+                <p class="section-subtitle">SIMPLE & TRANSPARENT</p>
+                <h2 class="section-title">Our Price List</h2>
+            </div>
+
+            <div class="table-responsive price-table-wrapper shadow-sm">
+                <table class="table table-hover align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Flower</th>
+                            <th>Fragrance</th>
+                            <th class="text-end">Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Flower 01</td>
+                            <td>Vervain</td>
+                            <td>Woody</td>
+                            <td class="text-end">100 DT</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flower 02</td>
+                            <td>Lily of the Valley</td>
+                            <td>Fresh Floral</td>
+                            <td class="text-end">150 DT</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flower 03</td>
+                            <td>Lilies</td>
+                            <td>Vanilla</td>
+                            <td class="text-end">200 DT</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="small text-muted mt-3">
+                Prices are shown in Tunisian dinars (DT).
+                The estimated reservation price depends on the selected
+                flower and reservation duration.
+            </p>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section id="reservation" class="reservation-section py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <p class="section-subtitle">MAKE IT YOURS</p>
+                <h2 class="section-title">Reserve Your Favorite Flower</h2>
+                <p class="text-muted">
+                    Fill in the details below to calculate your estimated price.
+                </p>
+            </div>
+
+            <div class="reservation-card mx-auto">
+                <form id="reservationform">
+
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <label for="nom" class="form-label">
+                                Full Name
+                            </label>
+
+                            <input type="text" class="form-control" id="nom" name="nom"
+                                placeholder="Enter your full name" autocomplete="name" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">
+                                Email Address
+                            </label>
+
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="example@email.com" autocomplete="email" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="telephone" class="form-label">
+                                Phone Number
+                            </label>
+
+                            <input type="tel" class="form-control" id="telephone" name="telephone"
+                                placeholder="Enter your phone number" autocomplete="tel" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="categorie" class="form-label">
+                                Flower Category
+                            </label>
+
+                            <select class="form-select" id="categorie" name="categorie" required>
+                                <option value="">Choose a category</option>
+                                <option value="Flower1">Flower 01</option>
+                                <option value="Flower2">Flower 02</option>
+                                <option value="Flower3">Flower 03</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="flowers" class="form-label">
+                                Choose Your Flower
+                            </label>
+
+                            <select class="form-select" id="flowers" name="flowers" required>
+                                <option value="">Select your favorite flower</option>
+                                <option value="vervaine">Vervain</option>
+                                <option value="valley">Lily of the Valley</option>
+                                <option value="lilies">Lilies</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="dateDebut" class="form-label">
+                                Start Date
+                            </label>
+
+                            <input type="date" class="form-control" id="dateDebut" name="dateDebut" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="dateFin" class="form-label">
+                                End Date
+                            </label>
+
+                            <input type="date" class="form-control" id="dateFin" name="dateFin" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="prixTotal" class="form-label">
+                                Estimated Total Price
+                            </label>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control price-result" id="prixTotal" name="prixTotal"
+                                    placeholder="Calculate to see the price" readonly>
+
+                                <span class="input-group-text">DT</span>
+                            </div>
+
+                            <div class="form-text">
+                                Estimated price = flower price × number of days.
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex flex-column
+                                    flex-sm-row gap-3 mt-4">
+
+                            <button type="button" class="btn btn-flower flex-fill" id="calculatePrice">
+                                Calculate Price
+                            </button>
+
+                            <button type="submit" class="btn btn-dark-flower flex-fill">
+                                Confirm Reservation
+                            </button>
+                        </div>
+
+                        <div class="col-12">
+                            <div id="message" class="alert d-none" role="status" aria-live="polite"></div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <a href="#accueil" class="footer-brand">
+                🌸 Flowers & Butterflies
+            </a>
+
+            <p class="mb-2 mt-2">
+                Let the beauty of flowers brighten your world.
+            </p>
+
+            <p class="copyright mb-0">
+                &copy; 2026 Flowers & Butterflies. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

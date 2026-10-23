@@ -1,0 +1,459 @@
+/* General styles */
+:root {
+    --flower-pink: #c56b85;
+    --flower-dark: #753b50;
+    --flower-light: #fff5f7;
+    --flower-green: #617b65;
+    --flower-cream: #fffaf6;
+    --text-dark: #393239;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background: #fff;
+    margin: 0;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(255, 250, 246, 0.96);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(50, 30, 40, 0.07);
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    color: var(--flower-dark);
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.navbar-brand span {
+    color: var(--flower-pink);
+}
+
+.nav-link {
+    color: #57434c;
+    font-size: 0.92rem;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--flower-pink);
+}
+
+/* Buttons */
+.btn-flower {
+    background: var(--flower-pink);
+    border: 1px solid var(--flower-pink);
+    color: #fff;
+    border-radius: 30px;
+    padding: 11px 25px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn-flower:hover {
+    background: var(--flower-dark);
+    border-color: var(--flower-dark);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-outline-flower {
+    border: 1px solid var(--flower-pink);
+    color: var(--flower-dark);
+    border-radius: 25px;
+    padding: 8px 14px;
+    font-size: 0.82rem;
+}
+
+.btn-outline-flower:hover {
+    background: var(--flower-pink);
+    border-color: var(--flower-pink);
+    color: #fff;
+}
+
+.btn-dark-flower {
+    background: var(--flower-dark);
+    color: #fff;
+    border: 1px solid var(--flower-dark);
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn-dark-flower:hover {
+    background: #512839;
+    border-color: #512839;
+    color: #fff;
+}
+
+/* Hero */
+.hero {
+    min-height: 650px;
+    padding: 140px 20px 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background:
+        linear-gradient(
+            rgba(45, 27, 37, 0.52),
+            rgba(45, 27, 37, 0.48)
+        ),
+        url("images/images5.jif") center 45% / cover no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+}
+
+.hero-subtitle {
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(2.8rem, 7vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.hero-description {
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #fff3f6;
+}
+
+/* Section headings */
+.intro-section {
+    background: var(--flower-cream);
+}
+
+.section-subtitle {
+    color: var(--flower-pink);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    color: var(--flower-dark);
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.intro-text {
+    max-width: 720px;
+    color: #766b71;
+    line-height: 1.9;
+}
+
+/* Carousel */
+.gallery-section {
+    background: var(--flower-cream);
+}
+
+.carousel {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.carousel-img {
+    height: 480px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 70px 20px 45px;
+    background: linear-gradient(transparent, rgba(28, 17, 24, 0.8));
+}
+
+.carousel-caption h3 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 600;
+}
+
+.carousel-caption p {
+    margin-bottom: 5px;
+}
+
+/* Catalogue cards */
+.catalogue-section {
+    background: #fff;
+}
+
+.flower-card {
+    border: 1px solid #f3e5e9;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(90, 45, 65, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flower-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(90, 45, 65, 0.12);
+}
+
+.flower-card-img {
+    height: 250px;
+    object-fit: cover;
+    background: var(--flower-light);
+}
+
+.flower-card .card-body {
+    padding: 24px;
+}
+
+.flower-category {
+    color: var(--flower-pink);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.flower-card .card-title {
+    color: var(--flower-dark);
+    font-size: 1.55rem;
+    margin-bottom: 12px;
+}
+
+.flower-card .card-text {
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.flower-price {
+    color: var(--flower-dark);
+    font-size: 1.25rem;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-right: 8px;
+}
+
+/* Price table */
+.price-section {
+    background: var(--flower-light);
+}
+
+.price-table-wrapper {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #f0dfe5;
+}
+
+.price-table-wrapper thead th {
+    background: var(--flower-dark);
+    color: #fff;
+    padding: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.price-table-wrapper tbody td {
+    padding: 18px;
+    color: #5e5158;
+}
+
+.price-table-wrapper tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Reservation form */
+.reservation-section {
+    background:
+        linear-gradient(
+            180deg,
+            #fffaf6 0%,
+            #fff5f7 100%
+        );
+}
+
+.reservation-card {
+    max-width: 850px;
+    background: #fff;
+    border: 1px solid #f2e1e7;
+    border-radius: 22px;
+    padding: clamp(22px, 5vw, 48px);
+    box-shadow: 0 12px 40px rgba(90, 45, 65, 0.08);
+}
+
+.form-label {
+    color: #51404a;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 9px;
+}
+
+.form-control,
+.form-select,
+.input-group-text {
+    min-height: 48px;
+    border-color: #eadde2;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+.form-control,
+.form-select {
+    padding: 12px 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--flower-pink);
+    box-shadow: 0 0 0 0.2rem rgba(197, 107, 133, 0.15);
+}
+
+.form-control::placeholder {
+    color: #b1a5ab;
+}
+
+.input-group .form-control {
+    border-radius: 10px 0 0 10px;
+}
+
+.input-group .input-group-text {
+    border-radius: 0 10px 10px 0;
+    background: var(--flower-light);
+    color: var(--flower-dark);
+}
+
+.price-result {
+    background: #fffafb;
+    font-weight: 600;
+    color: var(--flower-dark);
+}
+
+.form-text {
+    color: #82757c;
+    margin-top: 8px;
+}
+
+#message {
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #352630;
+    color: #f9eaf0;
+}
+
+.footer-brand {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-brand:hover {
+    color: #f3b6c9;
+}
+
+.footer p {
+    color: #d9c6ce;
+    font-size: 0.9rem;
+}
+
+.footer .copyright {
+    color: #bba8b1;
+    font-size: 0.78rem;
+    margin-top: 15px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .hero {
+        min-height: 540px;
+        padding: 120px 15px 75px;
+    }
+
+    .hero-subtitle {
+        letter-spacing: 2px;
+    }
+
+    .carousel-img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        padding: 45px 12px 25px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.35rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+
+    .flower-card-img {
+        height: 230px;
+    }
+
+    .price-table-wrapper thead th,
+    .price-table-wrapper tbody td {
+        padding: 13px 10px;
+        font-size: 0.8rem;
+    }
+
+    .reservation-card {
+        border-radius: 16px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
